@@ -1,0 +1,112 @@
+:root {
+    --primary-color:#060f29ee ;
+    --secondary-color: rgb(33, 33, 51);
+}
+
+body {
+    background: var(--primary-color);
+}
+.hero-content{
+    margin-top: 2rem;
+}
+
+.hero-image img{
+    border-radius: 4%;
+    max-width: 94%;
+    cursor: pointer;
+    
+}
+.hero-text p{
+    color:rgb(136, 128, 163) ;
+    position: relative;
+    z-index: 1;
+    text-transform: capitalize;
+    
+}
+
+/* footer  */
+
+.footer-content p{
+    color:rgb(136, 128, 163) ;
+    position: relative;
+    z-index: 1;
+    font-weight:500;  
+    text-transform: capitalize;
+    padding-left: 2rem;
+    letter-spacing: 2px;
+}
+
+.item h3{
+    color: rgb(0, 255, 234);
+    position: relative;
+    z-index: 1;
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+}
+.items h3{
+    color:rgb(136, 128, 163) ;
+    position: relative;
+    z-index: 1;
+    padding-top: 0.7rem;
+    padding-left: 1rem;
+}
+.footer-content span{
+    color: rgb(209, 205, 223);
+}
+.footer-content{
+    position: relative;
+    margin: 2rem 0; 
+}
+.hero-content::after{
+    content: " ";
+   
+    width: 80% ;
+    height:1.2px ;
+    background:rgba(100, 91, 128, 0.87) ;
+    position: absolute;
+    z-index: 1;
+    
+}
+.footer-content img{
+    width: 20%;
+    cursor: pointer;
+}
+@media(min-width:576px){
+    .footer-content{
+        margin-left:0 ;
+    }
+}
+
+
+@media (min-width:992px){
+    .hero-content::after{
+        width: 53%;
+    }
+    .footer-content{
+        margin-left: 4rem;
+    }
+    .footer-content img{
+        width: 25%;
+    }
+    .footer-content p{
+        font-size: 1.9rem;
+    }
+}
+@media(min-width:1200px){
+    .hero-content::after{
+        width: 47%;
+    }
+    .footer-content{
+       
+        margin-left: 8rem;
+    }
+}
+@media (min-width:1400px){
+    .hero-content::after{
+        width: 37%;
+    }
+    .footer-content{
+       
+        margin-left: 14rem;
+    }
+}
